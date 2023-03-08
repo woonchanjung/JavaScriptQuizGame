@@ -4,11 +4,6 @@
     // Ex - const AUDIO = new Audio('https://assets.mixkit.co/sfx/preview/mixkit-simple-countdown-922.mp3');
 
 // Defines the const for Imgs
-    // const RPS_LOOKUP = {
-    //     r: {img: 'imgs/rock.png', beats: 's'},
-    //     p: {img: 'imgs/paper.png', beats: 'r'},
-    //     s: {img: 'imgs/scissors.png', beats: 'p'},
-    // };
 
 // Defines the array of Objects for Questions
 

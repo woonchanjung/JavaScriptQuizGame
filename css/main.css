@@ -1,56 +1,88 @@
+/* For All Fonts and Boxes */
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
   }
-  
+
+  /* Heading of the page */
+  h1 {
+    background-color: rgb(111, 203, 111);
+    outline-style: dashed;
+    outline-color: black;
+  }
+
   body {
     height: 100vh;
     flex-direction: column;
   }
   
+  /* Creates a box for content inside */
   main {
     display: grid;
-    grid-template-columns: 35vmin 15vmin 35vmin;
-    grid-template-rows: 10vmin 10vmin 35vmin 15vmin;
+    grid-template-columns: 40vmin 15vmin 40vmin;
+    grid-template-rows: 10vmin 10vmin 40vmin 15vmin;
+    background-color: pink;
+    outline-style: dashed;
+    outline-color: black;
   }
   
-  main * {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  /* Keeps the container in the center of Browser */
   .flex-ctr {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  #p-result, #c-result {
-    border: 2vmin solid white;
-    border-radius: 5vmin;
-    width: 100%;
-    padding: 2vmin;
+
+  /* Creates container for the Question */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 40vmin 15vmin 40vmin;
+    grid-template-rows: 10vmin 10vmin 40vmin 15vmin;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  /* This is for the Question Box */
+  h3 {
+    display: flex;
+    justify-content: flex-start;
+    width: 20vmin;
+    margin: 2vmin;
+    outline-style: dashed;
+    outline-color: black;
+  }
+
+  /* For the ScoreBoard */
+  h4 {
+    display: flex;
+    justify-content: flex-start;
+    width: 20vmin;
+    margin: 2vmin;
+    outline-style: dashed;
+    outline-color: black;
   }
   
+  /* Creates the buttons */
   button {
-    justify-self: center;
-    width: 15vmin;
+    width: 20vmin;
     margin: 2vmin;
     background-color: white;
-    color: black;
+    color: dodgerblue;
     border: 1vmin solid black;
     border-radius: 4vmin;
-    font-size: 4vmin;
+    font-size: 3vmin;
     outline: none;
   }
   
+  /* When mouse over button color changes */
   button:hover {
     background-color: black;
     color: white;
   }
   
-  #countdown {
+  /* Will Eventually have a countdown */
+  /* #countdown {
     visibility: hidden;
     height: 10vmin;
     width: 10vmin;
@@ -61,4 +93,4 @@
     justify-self: center;
     align-self: center;
     color: purple;
-  }
+  } */
