@@ -53,7 +53,7 @@
   }
 
   /* Creates container for the Buttons */
-  .buttons {
+  .button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -90,18 +90,6 @@
     margin-bottom: 0.5em;
   }
   
-  .score {
-    font-size: 1em;
-    font-weight: bold;
-    background-color: blue;
-    color: white;
-    padding: 0.5em 1em;
-    outline-color: black;
-    border-radius: 0.5em;
-    box-shadow: 0 0.5em black;
-    margin-top: 16em;
-  }
-
   /* Will Eventually have a countdown */
   /* #countdown {
     visibility: hidden;
