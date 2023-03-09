@@ -6,20 +6,25 @@
 
   /* Heading of the page */
   h1 {
-    background-color: rgb(111, 203, 111);
+    background-color: rgb(202, 58, 202);
     outline-style: dashed;
     outline-color: black;
+    text-align: center;
+    margin-top: 1em;
+    padding: .3em;
   }
 
+  /* Background of the whole page*/
   body {
     height: 100vh;
     flex-direction: column;
+    background-color: #191919;
   }
   
   /* Creates a box for content inside */
   main {
     display: grid;
-    grid-template-columns: 40vmin 15vmin 40vmin;
+    grid-template-columns: 50vmin 15vmin 50vmin;
     grid-template-rows: 10vmin 10vmin 40vmin 15vmin;
     background-color: pink;
     outline-style: dashed;
@@ -33,54 +38,70 @@
     align-items: center;
   }
 
-  /* Creates container for the Question */
+  /* This is for the Question Box */
+  .questions {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: .1em;
+    outline-color: black;
+    border-radius: 0.5em;
+    box-shadow: 0 0.2em black;
+  }
+
+  /* Creates container for the Buttons */
   .buttons {
     display: flex;
-    flex-direction: column;
-    grid-template-columns: 40vmin 15vmin 40vmin;
-    grid-template-rows: 10vmin 10vmin 40vmin 15vmin;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3em;
     padding: 10px;
     border-radius: 10px;
-  }
-
-  /* This is for the Question Box */
-  h3 {
-    display: flex;
-    justify-content: flex-start;
-    width: 20vmin;
-    margin: 2vmin;
-    outline-style: dashed;
-    outline-color: black;
-  }
-
-  /* For the ScoreBoard */
-  h4 {
-    display: flex;
-    justify-content: flex-start;
-    width: 20vmin;
-    margin: 2vmin;
-    outline-style: dashed;
-    outline-color: black;
   }
   
   /* Creates the buttons */
   button {
-    width: 20vmin;
-    margin: 2vmin;
-    background-color: white;
-    color: dodgerblue;
+    margin: 0.5em;
+    color: #000;
     border: 1vmin solid black;
     border-radius: 4vmin;
-    font-size: 3vmin;
+    font-size: 1.2em;
+    font-weight: bold;
     outline: none;
+    background-color: #f1c40f;
+    box-shadow: 0 0.2em #000;
+    padding: 1vmin .5vmin;
+    transition: all 0.3s ease-in-out;
+
   }
   
   /* When mouse over button color changes */
   button:hover {
-    background-color: black;
-    color: white;
+    background-color: blue;
+    color: #fff;
+  }
+
+  /* Creates Scoreboard */
+  .scoreboard {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
   }
   
+  .score {
+    font-size: 1em;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    padding: 0.5em 1em;
+    outline-color: black;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em black;
+    margin-top: 16em;
+  }
+
   /* Will Eventually have a countdown */
   /* #countdown {
     visibility: hidden;

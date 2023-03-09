@@ -7,6 +7,7 @@
 
 // Defines the array of Objects for Questions
 
+
 // Defines the arry of Asnwer for the Questions
 
         /*----- app's state (variables) -----*/
@@ -15,10 +16,10 @@
 let currentQuestion;
 
 // Defines a variable that will keep track of the score
-let scores;
+let scores = 0;
 
 // Defines a variable that will give the results
-let winner; 
+let winner = false; 
 
         /*----- cached element references -----*/
 
