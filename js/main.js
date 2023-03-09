@@ -12,9 +12,6 @@ const questions = [{
 // Defines a variable that will keep track of the Question#
 let currentQuestion;
 
-// Defines a variable that will keep track of the score
-let score = 0;
-
 // Defines a variable that will give the results
 let winner = false; 
 
@@ -22,17 +19,25 @@ let winner = false;
 
 // Includes cached elements for later usage. 
 const questionEl = document.getElementById('question'); 
-const buttonEl = document.getElementById('button'); 
-const scoreEl = document.getElementById('score');
+const choicesEl = document.getElementById('choices'); 
 const resultEl = document.getElementById('result');
 const playAgainEl = document.getElementById('play-again')
 
 /*----- event listeners -----*/
 
 // Include event listeners for the answers of the users
-choicesEl.addEventListener('click', function(event)){
+choicesEl.addEventListener('click', function(event){
+    if (event.target.matches('button')) {
+        const choiceIndex = parseInt(event.target.getAttribute('data-index'));
+        checkAnswer(choiceIndex);
+    }
+});
 
-}
+// Play again Event Listener
+
+playAgainEl.addEventListener('click', function(){
+    init();
+});
 
 /*----- functions -----*/
 init();
@@ -40,7 +45,6 @@ init();
 // Initiatlize all state, then call render();
 function init() {
     currentQuestion = 0
-    score = 0;
     winner = null;
     render();
 }
@@ -54,22 +58,20 @@ function render() {
     renderControls();
 }
 
+// Displays current question
 function renderQuestions() {
-    
+    questionEl.textContent = questions[currentQuestion].question;
 }
 
+// Display the current questions and its choices of answers
 function renderAnswers() {
-
-}
-
-function renderScore() {
 
 }
 
 function renderControls() {
 
 }
-// Display the current questions and its choices of answers
+
 
 // In response to user interaction (player makes a move).
 
