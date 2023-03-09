@@ -11,7 +11,8 @@ JavaScript Trivia Game is a simple game built using JavaScript. It consists of m
 - CSS
 
 *** Getting Started ***
-To play the game, simply follow the link to the deployed game: *** LINK ***
+To play the game, simply follow the link to the deployed game: 
+*** https://woonchanjung.github.io/JavaScriptQuizGame/ ***
 
 Once you're on the game page, click the "Start Game" button to begin playing. 
 You'll be presented with a series of questions and your goal is to get the best score!
