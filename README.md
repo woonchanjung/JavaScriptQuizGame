@@ -10,7 +10,7 @@ JavaScript Trivia Game is a simple game built using JavaScript. It consists of m
     <li><a href="#Screenshot">Screenshot</a></li>
     <li><a href="#Technologies Used">Technologies Used</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
-    <li><a href="#Planned future enhancements for the game:">Planned future enhancements for the game</a></li>
+    <li><a href="#Planned future enhancements for the game">Planned future enhancements for the game</a></li>
   </ol>
 </details>
 
